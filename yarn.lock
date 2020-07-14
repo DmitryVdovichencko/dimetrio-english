@@ -13341,6 +13341,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-patua-one@^0.0.71:
+  version "0.0.71"
+  resolved "https://registry.yarnpkg.com/typeface-patua-one/-/typeface-patua-one-0.0.71.tgz#458c7c4812665762d4f46fba3eb555185a1f8929"
+  integrity sha512-GPnupeF7BPhJtNoM42tZmPH1kSLUhydAJCV8Uo/fte2iQ05uq1lNilsw05GtFcV4uRqi5A36rlBSYGmV2UKuLg==
+
 unbzip2-stream@^1.0.9:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/unbzip2-stream/-/unbzip2-stream-1.4.3.tgz#b0da04c4371311df771cdc215e87f2130991ace7"

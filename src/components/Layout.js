@@ -3,7 +3,9 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import { MDXProvider } from '@mdx-js/react';
 import { createGlobalStyle } from 'styled-components';
-
+import Header from './Header';
+import Nav from './Nav';
+import PatuaOne from 'typeface-patua-one'
 import 'prismjs/themes/prism-okaidia.css';
 
 import Link from './Link';
@@ -13,6 +15,9 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Patua One';
   }
 
   ${() => {
@@ -35,13 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const NAVIGATION = [
-  { to: '/', label: 'About' },
-  { to: '/blog', label: 'Blog' },
-  { to: 'https://roadtoreact.com', label: 'Courses' },
-];
-
-export default ({ site, frontmatter = {}, children }) => {
+export default ({ location, site, frontmatter = {}, children }) => {
   const {
     title,
     description: siteDescription,
@@ -77,14 +76,8 @@ export default ({ site, frontmatter = {}, children }) => {
         }}
       >
         <Fragment>
-          <ul>
-            {NAVIGATION.map(navigation => (
-              <li key={navigation.label}>
-                <Link to={navigation.to}>{navigation.label}</Link>
-              </li>
-            ))}
-          </ul>
-
+          <Header site={site}></Header>
+          <Nav location={location}></Nav>
           {children}
         </Fragment>
       </MDXProvider>

@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.robinwieruch.de/',
     author: 'Robin Wieruch',
-    title: 'Gatsby MDX Starter Project',
+    title: 'Dimetrio English',
     description: 'My Gatsby MDX Starter Project',
     keywords: [
       'Software Engineer',
