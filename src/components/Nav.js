@@ -24,7 +24,7 @@ const NavStyle = styled.nav`
 `;
 const LinkStyle = styled.li`
     padding:10px;
-    margin:5px;
+    margin:8px;
     font-family:Patua One;
     border-radius:2px;
     background-color:${props => props.current ? "rgb(239,239,239)" : "none"};

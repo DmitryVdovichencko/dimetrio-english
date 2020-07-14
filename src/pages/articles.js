@@ -1,17 +1,16 @@
 import React from 'react';
 import { graphql,Link } from 'gatsby';
 import Layout from '../components/Layout';
+import PostPerview from '../components/PostPerview';
 
 const Articles = ({ location, data: { site,allMdx } }) => {
   return (
     <Layout location={location} site={site}>
     {allMdx.edges.map((post)=>(
-      <a href={post.node.fields.slug}>
-    <div>
-      <h5>{post.node.fields.title}</h5>
-      <p>{post.node.excerpt}</p>
-    </div>
-    </a>))}
+      
+    <PostPerview slug={post.node.fields.slug} title={post.node.fields.title} excerpt={post.node.excerpt} >
+    </PostPerview>
+ ))}
   </Layout>
   )
 }

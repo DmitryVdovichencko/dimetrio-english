@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import { MDXProvider } from '@mdx-js/react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Nav from './Nav';
 import PatuaOne from 'typeface-patua-one'
@@ -38,6 +38,14 @@ const GlobalStyle = createGlobalStyle`
     padding-right: 1em;
     padding-left: 1em;
   }
+`;
+const Content = styled.main`
+  padding: 0% 2%;
+  width:96%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content:center;
+  align-items:center;
 `;
 
 export default ({ location, site, frontmatter = {}, children }) => {
@@ -78,7 +86,10 @@ export default ({ location, site, frontmatter = {}, children }) => {
         <Fragment>
           <Header site={site}></Header>
           <Nav location={location}></Nav>
+          <Content>
           {children}
+          </Content>
+          
         </Fragment>
       </MDXProvider>
     </Fragment>
