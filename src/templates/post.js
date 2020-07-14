@@ -21,10 +21,11 @@ const CategoryList = ({ list = [] }) => (
 
 export default function Post({
   data: { site, mdx },
+  location,
   pageContext: { next, prev },
 }) {
   return (
-    <Layout site={site} frontmatter={mdx.frontmatter}>
+    <Layout site={site} location={location} frontmatter={mdx.frontmatter}>
       <h1>{mdx.frontmatter.title}</h1>
       <h2>{mdx.frontmatter.date}</h2>
 
