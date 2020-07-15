@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-
 import Link from '../components/Link';
 import Layout from '../components/Layout';
 
@@ -13,7 +12,7 @@ const CategoryItem = ({ postsByCategory, category }) => (
     </h1>
 
     <ul>
-      {postsByCategory.map(({ id, fields, excerpt }) => {
+      {/* {postsByCategory.map(({ id, fields, excerpt }) => {
         return (
           <li key={id}>
             <h1>
@@ -22,7 +21,7 @@ const CategoryItem = ({ postsByCategory, category }) => (
             <p>{excerpt}</p>
           </li>
         );
-      })}
+      })} */}
     </ul>
 
     <hr />
@@ -44,9 +43,9 @@ const CategoryList = ({ postsByCategories }) => (
   </div>
 );
 
-export default function Categories({ data: { site }, pageContext }) {
+export default function Categories({ data: { site }, pageContext,location }) {
   return (
-    <Layout site={site}>
+    <Layout site={site} location={location}>
       {pageContext.category ? (
         <CategoryItem {...pageContext} />
       ) : (
