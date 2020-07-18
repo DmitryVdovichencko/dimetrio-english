@@ -5,7 +5,7 @@ import { MDXProvider } from '@mdx-js/react';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Nav from './Nav';
-import PatuaOne from 'typeface-patua-one'
+import PatuaOne from 'typeface-patua-one';
 import 'prismjs/themes/prism-okaidia.css';
 
 import Link from './Link';

@@ -27,7 +27,8 @@
     "react-helmet": "^6.0.0",
     "react-youtube": "^7.11.2",
     "styled-components": "^5.1.0",
-    "typeface-patua-one": "^0.0.71"
+    "typeface-patua-one": "^0.0.71",
+    "typeface-roboto": "^0.0.75"
   },
   "devDependencies": {},
   "keywords": [

@@ -13346,6 +13346,11 @@ typeface-patua-one@^0.0.71:
   resolved "https://registry.yarnpkg.com/typeface-patua-one/-/typeface-patua-one-0.0.71.tgz#458c7c4812665762d4f46fba3eb555185a1f8929"
   integrity sha512-GPnupeF7BPhJtNoM42tZmPH1kSLUhydAJCV8Uo/fte2iQ05uq1lNilsw05GtFcV4uRqi5A36rlBSYGmV2UKuLg==
 
+typeface-roboto@^0.0.75:
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-0.0.75.tgz#98d5ba35ec234bbc7172374c8297277099cc712b"
+  integrity sha512-VrR/IiH00Z1tFP4vDGfwZ1esNqTiDMchBEXYY9kilT6wRGgFoCAlgkEUMHb1E3mB0FsfZhv756IF0+R+SFPfdg==
+
 unbzip2-stream@^1.0.9:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/unbzip2-stream/-/unbzip2-stream-1.4.3.tgz#b0da04c4371311df771cdc215e87f2130991ace7"
